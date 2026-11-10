@@ -6,8 +6,8 @@ import sqlite3
 import os
 
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, "todos.db")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__)) # gives the path of the file save in full directory
+DB_PATH = os.path.join(BASE_DIR, "todos.db")#build the database path
 
 app=Flask(__name__)
 
